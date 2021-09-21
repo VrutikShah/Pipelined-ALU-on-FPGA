@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ES203_project_final.srcs/sources_1/Seg_7_Display.v" \
+"../../../../ES203_project_final.srcs/sources_1/new/alu_module.v" \
+"../../../../ES203_project_final.srcs/sources_1/new/clk_divider.v" \
+"../../../../ES203_project_final.srcs/sources_1/new/if_decode_module.v" \
+"../../../../ES203_project_final.srcs/sources_1/new/pipeline.v" \
+"../../../../ES203_project_final.srcs/sim_1/new/pipeline_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

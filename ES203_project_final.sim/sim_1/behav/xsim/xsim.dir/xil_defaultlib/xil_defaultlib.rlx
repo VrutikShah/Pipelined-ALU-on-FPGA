@@ -1,0 +1,11 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sim_1/new/pipeline_tb.v,1573903187,verilog,,,,pipeline_tb,,,,,,,,
+D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/Seg_7_Display.v,1573894377,verilog,,D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/alu_module.v,,seg7decimal,,,,,,,,
+D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/alu_module.v,1573827914,verilog,,D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/clk_divider.v,,alu_module,,,,,,,,
+D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/clk_divider.v,1573900916,verilog,,D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/if_decode_module.v,,clk_divider,,,,,,,,
+D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/if_decode_module.v,1573902619,verilog,,D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/pipeline.v,,if_decode_module,,,,,,,,
+D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/pipeline.v,1573901239,verilog,,D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sim_1/new/pipeline_tb.v,,pipeline,,,,,,,,

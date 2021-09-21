@@ -1,0 +1,429 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Nov 18 23:15:39 2019
+# Process ID: 5224
+# Current directory: D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.runs/synth_1
+# Command line: vivado.exe -log pipeline.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pipeline.tcl
+# Log file: D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.runs/synth_1/pipeline.vds
+# Journal file: D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source pipeline.tcl -notrace
+Command: synth_design -top pipeline -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4696 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 786.215 ; gain = 179.027
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pipeline' [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/pipeline.v:13]
+	Parameter mem_size bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_divider' [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/clk_divider.v:2]
+INFO: [Synth 8-4471] merging register 'clock_out_reg' into 'temp_clk_reg' [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/clk_divider.v:18]
+WARNING: [Synth 8-6014] Unused sequential element clock_out_reg was removed.  [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/clk_divider.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'clk_divider' (1#1) [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/clk_divider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'if_decode_module' [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/if_decode_module.v:3]
+	Parameter no_instr bound to: 4 - type: integer 
+	Parameter instr_size bound to: 32 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element instr_reg was removed.  [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/if_decode_module.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'if_decode_module' (2#1) [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/if_decode_module.v:3]
+INFO: [Synth 8-6157] synthesizing module 'alu_module' [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/alu_module.v:20]
+	Parameter n bound to: 32 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element operand_1_reg was removed.  [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/alu_module.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'alu_module' (3#1) [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/alu_module.v:20]
+INFO: [Synth 8-6157] synthesizing module 'seg7decimal' [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/Seg_7_Display.v:5]
+INFO: [Synth 8-226] default block is never used [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/Seg_7_Display.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'seg7decimal' (4#1) [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/Seg_7_Display.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'pipeline' (5#1) [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/pipeline.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 842.191 ; gain = 235.004
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 846.473 ; gain = 239.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 846.473 ; gain = 239.285
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'nzcv[0]'. [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/Basys3_Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/Basys3_Master.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'nzcv[0]'. [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/Basys3_Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/Basys3_Master.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'nzcv[1]'. [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/Basys3_Master.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/Basys3_Master.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'nzcv[1]'. [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/Basys3_Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/Basys3_Master.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'nzcv[2]'. [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/Basys3_Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/Basys3_Master.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'nzcv[2]'. [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/Basys3_Master.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/Basys3_Master.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'nzcv[3]'. [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/Basys3_Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/Basys3_Master.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'nzcv[3]'. [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/Basys3_Master.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/Basys3_Master.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pipeline_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pipeline_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 967.211 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 967.211 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 967.211 ; gain = 360.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 967.211 ; gain = 360.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 967.211 ; gain = 360.023
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "instr_set" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.srcs/sources_1/new/alu_module.v:79]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 967.211 ; gain = 360.023
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   4 Input     32 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   3 Input      2 Bit       Adders := 2     
+	   4 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 7     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  17 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	  16 Input     32 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pipeline 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+Module clk_divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module if_decode_module 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  17 Input     32 Bit        Muxes := 1     
+Module alu_module 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   4 Input     32 Bit       Adders := 2     
+	   3 Input      2 Bit       Adders := 2     
+	   4 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  16 Input     32 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 6     
+	  16 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+Module seg7decimal 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design pipeline has port dp driven by constant 1
+INFO: [Synth 8-3886] merging instance 'first_stage/op1_reg_rep[0]' (FD_1) to 'first_stage/op1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'first_stage/op1_reg_rep[1]' (FD_1) to 'first_stage/op1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'first_stage/op1_reg_rep[2]' (FD_1) to 'first_stage/op1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'first_stage/op2_reg[0]__0' (FD_1) to 'first_stage/op2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'first_stage/op2_reg[1]__0' (FD_1) to 'first_stage/op2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'first_stage/op2_reg[2]__0' (FD_1) to 'first_stage/op2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'first_stage/op2_reg[3]__0' (FD_1) to 'first_stage/op2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'first_stage/nzcv_reg[3]' (FD_1) to 'first_stage/op2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'first_stage/nzcv_reg[2]' (FD_1) to 'first_stage/op2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'first_stage/op2_reg[3]' (FD_1) to 'first_stage/nzcv_reg[1]'
+INFO: [Synth 8-3886] merging instance 'first_stage/nzcv_reg[0]' (FD_1) to 'first_stage/nzcv_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\first_stage/nzcv_reg[1] )
+INFO: [Synth 8-3886] merging instance 'first_stage/opcode_reg[0]' (FD_1) to 'first_stage/opcode_reg[3]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 967.211 ; gain = 360.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+------------+-----------+----------------------+---------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives    | 
++------------+------------+-----------+----------------------+---------------+
+|pipeline    | memory_reg | Implied   | 16 x 32              | RAM32M x 12   | 
++------------+------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 967.211 ; gain = 360.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 975.098 ; gain = 367.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+------------+-----------+----------------------+---------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives    | 
++------------+------------+-----------+----------------------+---------------+
+|pipeline    | memory_reg | Implied   | 16 x 32              | RAM32M x 12   | 
++------------+------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:57 . Memory (MB): peak = 975.098 ; gain = 367.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 984.484 ; gain = 377.297
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 984.484 ; gain = 377.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 984.484 ; gain = 377.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 984.484 ; gain = 377.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 984.484 ; gain = 377.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 984.484 ; gain = 377.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    27|
+|3     |LUT1   |     5|
+|4     |LUT2   |    33|
+|5     |LUT3   |    45|
+|6     |LUT4   |    84|
+|7     |LUT5   |    41|
+|8     |LUT6   |    56|
+|9     |RAM32M |     6|
+|10    |FDRE   |   110|
+|11    |IBUF   |     2|
+|12    |OBUF   |    13|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+-----------------+------+
+|      |Instance       |Module           |Cells |
++------+---------------+-----------------+------+
+|1     |top            |                 |   424|
+|2     |  first_stage  |if_decode_module |   227|
+|3     |  second_stage |alu_module       |    34|
+|4     |  stage        |seg7decimal      |    45|
+|5     |  v1           |clk_divider      |    63|
++------+---------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 984.484 ; gain = 377.297
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:56 . Memory (MB): peak = 984.484 ; gain = 256.559
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 984.484 ; gain = 377.297
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 6 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1000.555 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 12 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:19 . Memory (MB): peak = 1000.555 ; gain = 653.438
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1000.555 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Semesters/Sem3/ES203/ES203_Project/ES203_project_final/ES203_project_final.runs/synth_1/pipeline.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file pipeline_utilization_synth.rpt -pb pipeline_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 18 23:17:08 2019...
